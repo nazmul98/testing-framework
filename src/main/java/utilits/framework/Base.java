@@ -1,4 +1,4 @@
-package framework;
+package utilits.framework;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -21,10 +21,10 @@ public class Base {
 		prop.load(fis);
 		String browser = prop.getProperty("browser");
 		
-		if (browser == "chrome") {
+		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", basePath + "/driver/chromedriver");
 			driver = new ChromeDriver();
-		} else if (browser == "firefox") {
+		} else if (browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", basePath + "/driver/geckodriver");
 			driver = new FirefoxDriver();
 		}
