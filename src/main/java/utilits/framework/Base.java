@@ -11,12 +11,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Base {
 	public WebDriver driver;
+	public Properties prop;
 	
 	public WebDriver initializeBrowser () throws IOException {
 		
 		String basePath = System.getProperty("user.dir");
 		
-		Properties prop = new Properties();
+		prop = new Properties();
 		FileInputStream fis = new FileInputStream(basePath + "/src/main/java/app.properties");
 		prop.load(fis);
 		String browser = prop.getProperty("browser");
