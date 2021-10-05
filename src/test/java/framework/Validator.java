@@ -5,13 +5,17 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import pageObj.framework.HomePage;
 import utilits.framework.Base;
 
 public class Validator extends Base {
-	 // public static Logger log = LogManager.getLogger(Validator.class);
+	// Initialize the new instance of Browser before Executing Test
+	public WebDriver driver;
+	
+	// public static Logger log = LogManager.getLogger(Validator.class);
 	
 	@BeforeTest
 	public void initialize() throws IOException {

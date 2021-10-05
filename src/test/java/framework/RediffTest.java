@@ -3,6 +3,7 @@ package framework;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
 
 import pageObj.framework.HomePage;
@@ -10,6 +11,8 @@ import pageObj.framework.LoginPage;
 import utilits.framework.Base;
 
 public class RediffTest extends Base {
+	public WebDriver driver;
+	
 	@Test(dataProvider="getLoginInfo")
 	public void rediffTester(String username, String password) throws IOException {
 		

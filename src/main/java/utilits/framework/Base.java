@@ -1,10 +1,14 @@
 package utilits.framework;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -33,4 +37,13 @@ public class Base {
 		return driver;
 		
 	}
+	
+	public void screenshotTaker(String methodName, WebDriver driver) throws IOException {
+		TakesScreenshot sc = (TakesScreenshot) driver;
+		File srcFile = sc.getScreenshotAs(OutputType.FILE);
+		String destFile = System.getProperty("user.dir") + "/reports/" + methodName + ".png";
+		FileUtils.copyFile(srcFile, new File(destFile));
+	}
+	
+	
 }
