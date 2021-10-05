@@ -3,9 +3,7 @@ package framework;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 import pageObj.framework.HomePage;
 import pageObj.framework.LoginPage;
@@ -25,7 +23,7 @@ public class RediffTest extends Base {
 		lp.getUsername().sendKeys(username);
 		lp.getPassword().sendKeys(password);
 		lp.getSignInBtn().click();
-		
+		driver.close();
 	}
 	
 	@DataProvider
@@ -38,11 +36,6 @@ public class RediffTest extends Base {
 		loginInfo[1][1] = "123456";
 		
 		return loginInfo;
-	}
-	
-	@AfterTest
-	public void closeBrowser() {
-		driver.close();
 	}
 }
 

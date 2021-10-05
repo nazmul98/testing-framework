@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="framework.RediffTest" time="12.067" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="23.417" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="16"/>
+    <property name="webdriver.chrome.driver" value="/home/nazmul/Documents/JavaWorld/framework/driver/chromedriver"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/home/nazmul/Documents/JavaWorld/framework/target/test-classes:/home/nazmul/Documents/JavaWorld/framework/target/classes:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.5/selenium-java-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.5/selenium-api-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.5/selenium-chrome-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.5/selenium-edge-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.5/selenium-firefox-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.5/selenium-ie-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.5/selenium-opera-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.5/selenium-remote-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.5/selenium-safari-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.5/selenium-support-3.141.5.jar:/home/nazmul/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/nazmul/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/nazmul/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/nazmul/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/nazmul/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/nazmul/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/nazmul/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/nazmul/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/nazmul/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/nazmul/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/nazmul/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/home/nazmul/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/nazmul/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/home/nazmul/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/home/nazmul/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
     <property name="os.name" value="Linux"/>
     <property name="java.vm.specification.version" value="16"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-16.0.2/lib"/>
-    <property name="sun.java.command" value="/home/nazmul/Documents/JavaWorld/framework/target/surefire/surefirebooter15912197841247489852.jar /home/nazmul/Documents/JavaWorld/framework/target/surefire 2021-10-05T01-46-52_666-jvmRun1 surefire9870155115919345780tmp surefire_013733081483095096717tmp"/>
+    <property name="sun.java.command" value="/home/nazmul/Documents/JavaWorld/framework/target/surefire/surefirebooter3521275112776618779.jar /home/nazmul/Documents/JavaWorld/framework/target/surefire 2021-10-05T01-50-59_537-jvmRun1 surefire12794519892272342391tmp surefire_0588329465656138200tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/nazmul/Documents/JavaWorld/framework/target/test-classes:/home/nazmul/Documents/JavaWorld/framework/target/classes:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.5/selenium-java-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.5/selenium-api-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.5/selenium-chrome-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.5/selenium-edge-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.5/selenium-firefox-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.5/selenium-ie-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.5/selenium-opera-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.5/selenium-remote-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.5/selenium-safari-driver-3.141.5.jar:/home/nazmul/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.5/selenium-support-3.141.5.jar:/home/nazmul/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/nazmul/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/nazmul/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/nazmul/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/nazmul/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/nazmul/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/nazmul/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/nazmul/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/nazmul/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/nazmul/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/nazmul/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/home/nazmul/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/nazmul/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/home/nazmul/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.1/log4j-api-2.14.1.jar:/home/nazmul/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.1/log4j-core-2.14.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/nazmul/Documents/JavaWorld/framework/target/surefire/surefirebooter15912197841247489852.jar"/>
+    <property name="surefire.real.class.path" value="/home/nazmul/Documents/JavaWorld/framework/target/surefire/surefirebooter3521275112776618779.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="16.0.2+7-67"/>
     <property name="user.name" value="nazmul"/>
@@ -50,6 +52,29 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="60.0"/>
   </properties>
-  <testcase name="rediffTester" classname="framework.RediffTest" time="6.002"/>
-  <testcase name="rediffTester" classname="framework.RediffTest" time="5.705"/>
+  <testcase name="rediffTester[hello@gmail.com, abcdef](1)" classname="framework.RediffTest" time="5.74">
+    <system-err><![CDATA[Starting ChromeDriver 93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135}) on port 14892
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 05, 2021 1:51:01 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135}) on port 21498
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 05, 2021 1:51:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="rediffTester[john@gmail.com, 123456](2)" classname="framework.RediffTest" time="12.872">
+    <system-err><![CDATA[Starting ChromeDriver 93.0.4577.63 (ff5c0da2ec0adeaed5550e6c7e98417dac77d98a-refs/branch-heads/4577@{#1135}) on port 23811
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 05, 2021 1:51:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="getValidate" classname="framework.Validator" time="0.391"/>
 </testsuite>
