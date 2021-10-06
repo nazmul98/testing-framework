@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-05T23:32:50 EDT" name="Suite" finished-at="2021-10-05T23:33:08 EDT" duration-ms="17877">
+  <suite started-at="2021-10-05T23:56:24 EDT" name="Suite" finished-at="2021-10-05T23:56:41 EDT" duration-ms="17466">
     <groups>
     </groups>
-    <test started-at="2021-10-05T23:32:50 EDT" name="Test" finished-at="2021-10-05T23:33:08 EDT" duration-ms="17877">
+    <test started-at="2021-10-05T23:56:24 EDT" name="Test" finished-at="2021-10-05T23:56:41 EDT" duration-ms="17466">
       <class name="framework.RediffTest">
-        <test-method signature="rediffTester(java.lang.String,java.lang.String)[pri:0, instance:framework.RediffTest@101952da]" started-at="2021-10-05T23:32:53 EDT" name="rediffTester" data-provider="getLoginInfo" finished-at="2021-10-05T23:33:00 EDT" duration-ms="6557" status="PASS">
+        <test-method signature="rediffTester(java.lang.String,java.lang.String)[pri:0, instance:framework.RediffTest@6babf3bf]" started-at="2021-10-05T23:56:28 EDT" name="rediffTester" data-provider="getLoginInfo" finished-at="2021-10-05T23:56:34 EDT" duration-ms="5990" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rediffTester -->
-        <test-method signature="rediffTester(java.lang.String,java.lang.String)[pri:0, instance:framework.RediffTest@101952da]" started-at="2021-10-05T23:33:00 EDT" name="rediffTester" data-provider="getLoginInfo" finished-at="2021-10-05T23:33:07 EDT" duration-ms="6999" status="PASS">
+        <test-method signature="rediffTester(java.lang.String,java.lang.String)[pri:0, instance:framework.RediffTest@6babf3bf]" started-at="2021-10-05T23:56:34 EDT" name="rediffTester" data-provider="getLoginInfo" finished-at="2021-10-05T23:56:40 EDT" duration-ms="6036" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
         </test-method> <!-- rediffTester -->
       </class> <!-- framework.RediffTest -->
       <class name="framework.Validator">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:framework.Validator@f736069]" started-at="2021-10-05T23:32:50 EDT" name="initialize" finished-at="2021-10-05T23:32:53 EDT" duration-ms="3249" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:framework.Validator@6da21078]" started-at="2021-10-05T23:56:24 EDT" name="initialize" finished-at="2021-10-05T23:56:28 EDT" duration-ms="4045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="getValidate()[pri:0, instance:framework.Validator@f736069]" started-at="2021-10-05T23:33:07 EDT" name="getValidate" finished-at="2021-10-05T23:33:07 EDT" duration-ms="301" status="FAIL">
+        <test-method signature="getValidate()[pri:0, instance:framework.Validator@6da21078]" started-at="2021-10-05T23:56:40 EDT" name="getValidate" finished-at="2021-10-05T23:56:40 EDT" duration-ms="584" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Rediff.com: News | Rediffmail | Stock Quotes | Shopping] but found [Rediff.com: News | Rediffmail | Stock Quotes | Shoppin]]]>
@@ -75,25 +75,20 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getValidate -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:framework.Validator@f736069]" started-at="2021-10-05T23:33:08 EDT" name="closeBrowser" finished-at="2021-10-05T23:33:08 EDT" duration-ms="259" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:framework.Validator@6da21078]" started-at="2021-10-05T23:56:41 EDT" name="closeBrowser" finished-at="2021-10-05T23:56:41 EDT" duration-ms="228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

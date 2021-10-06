@@ -18,19 +18,22 @@ public class Listeners extends Base implements ITestListener {
 	ExtentReports extent = ExtentReportGenerator.getExtentReports();
 	ExtentTest test;
 	
+	ThreadLocal<ExtentTest> extTest = new ThreadLocal<ExtentTest>();
+	
 	@Override
 	public void onTestStart(ITestResult result) {
 		test = extent.createTest(result.getMethod().getMethodName());
+		extTest.set(test);
 	}
 
 	@Override  
 	public void onTestSuccess(ITestResult result) {
-		test.log(Status.PASS, "Test is Successfuly Passed");
+		extTest.get().log(Status.PASS, "Test is Successfuly Passed");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		test.fail(result.getThrowable());
+		extTest.get().fail(result.getThrowable());
 		
 		WebDriver driver = null;
 		String methodName = result.getMethod().getMethodName();

@@ -152,7 +152,11 @@
                   <div class="stack-trace">java.lang.AssertionError: expected [Rediff.com: News | Rediffmail | Stock Quotes | Shopping] but found [Rediff.com: News | Rediffmail | Stock Quotes | Shoppin]
 	at framework.Validator.getValidate(Validator.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 24 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -191,11 +195,11 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;framework.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;framework.RediffTest&quot;/&gt;
       &lt;class name=&quot;framework.Validator&quot;/&gt;
@@ -242,20 +246,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'rediffTester')
 data.setCell(0, 2, 'framework.RediffTest')
-data.setCell(0, 3, 6999);
+data.setCell(0, 3, 6036);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'rediffTester')
 data.setCell(1, 2, 'framework.RediffTest')
-data.setCell(1, 3, 6557);
+data.setCell(1, 3, 5990);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'getValidate')
 data.setCell(2, 2, 'framework.Validator')
-data.setCell(2, 3, 301);
+data.setCell(2, 3, 584);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -291,11 +295,11 @@ return data;
               <div class="chronological-class-name">framework.RediffTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">rediffTester(hello@gmail.com, abcdef)</span>
-                <span class="method-start">3293 ms</span>
+                <span class="method-start">4084 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">rediffTester(john@gmail.com, 123456)</span>
-                <span class="method-start">9872 ms</span>
+                <span class="method-start">10106 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -304,11 +308,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getValidate</span>
-                <span class="method-start">16879 ms</span>
+                <span class="method-start">16152 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">17613 ms</span>
+                <span class="method-start">17232 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
