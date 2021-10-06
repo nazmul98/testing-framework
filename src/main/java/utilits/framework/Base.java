@@ -38,11 +38,13 @@ public class Base {
 		
 	}
 	
-	public void screenshotTaker(String methodName, WebDriver driver) throws IOException {
+	public String screenshotTaker(String methodName, WebDriver driver) throws IOException {
 		TakesScreenshot sc = (TakesScreenshot) driver;
 		File srcFile = sc.getScreenshotAs(OutputType.FILE);
 		String destFile = System.getProperty("user.dir") + "/reports/" + methodName + ".png";
 		FileUtils.copyFile(srcFile, new File(destFile));
+		
+		return destFile;
 	}
 	
 	
