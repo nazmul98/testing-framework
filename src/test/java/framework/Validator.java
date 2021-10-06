@@ -26,7 +26,7 @@ public class Validator extends Base {
 	
 	@Test
 	public void getValidate() {
-		Assert.assertEquals("Rediff.com: News | Rediffmail | Stock Quotes | Shopping", driver.getTitle());
+		Assert.assertEquals("Rediff.com: News | Rediffmail | Stock Quotes | Shoppin", driver.getTitle());
 		
 		HomePage hp = new HomePage(driver);
 		Assert.assertTrue(hp.getNavIcons().isDisplayed());

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="framework.Validator" class="method navigator-link" hash-for-method="getValidate">getValidate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +116,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="framework.Validator" class="method navigator-link" hash-for-method="getValidate">getValidate</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="framework.RediffTest" class="method navigator-link" hash-for-method="rediffTester(hello@gmail.com, abcdef)">rediffTester(hello@gmail.com, abcdef)</a> <!-- method navigator-link -->
@@ -129,9 +138,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">framework.Validator</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -140,10 +149,15 @@
                   <a name="getValidate">
                   </a> <!-- getValidate -->
                   <span class="method-name">getValidate</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Rediff.com: News | Rediffmail | Stock Quotes | Shopping] but found [Rediff.com: News | Rediffmail | Stock Quotes | Shoppin]
+	at framework.Validator.getValidate(Validator.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -228,15 +242,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'rediffTester')
 data.setCell(0, 2, 'framework.RediffTest')
-data.setCell(0, 3, 7746);
+data.setCell(0, 3, 8577);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'rediffTester')
 data.setCell(1, 2, 'framework.RediffTest')
-data.setCell(1, 3, 6188);
+data.setCell(1, 3, 6108);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'getValidate')
 data.setCell(2, 2, 'framework.Validator')
-data.setCell(2, 3, 193);
+data.setCell(2, 3, 174);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -277,22 +291,24 @@ return data;
               <div class="chronological-class-name">framework.RediffTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">rediffTester(hello@gmail.com, abcdef)</span>
-                <span class="method-start">3358 ms</span>
+                <span class="method-start">3049 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">rediffTester(john@gmail.com, 123456)</span>
-                <span class="method-start">9557 ms</span>
+                <span class="method-start">9166 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">framework.Validator</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">getValidate</span>
-                <span class="method-start">17319 ms</span>
+                <span class="method-start">17749 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">17516 ms</span>
+                <span class="method-start">18455 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -13,11 +13,6 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- framework.Validator -->
-      <class name="framework.RediffTest">
-        <methods>
-          <include name="rediffTester"/>
-        </methods>
-      </class> <!-- framework.RediffTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
