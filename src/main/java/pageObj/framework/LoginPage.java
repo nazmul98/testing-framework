@@ -14,6 +14,7 @@ public class LoginPage {
 	By username = By.id("login1");
 	By password = By.id("password");
 	By signInBtn = By.xpath("//input[@name='proceed']");
+	By loginErrorText = By.tagName("b");
 	
 	public WebElement getUsername() {
 		return driver.findElement(username);
@@ -23,5 +24,8 @@ public class LoginPage {
 	}
 	public WebElement getSignInBtn() {
 		return driver.findElement(signInBtn);
+	}
+	public String getLoginErrorText() {
+		return driver.findElement(loginErrorText).getText();
 	}
 }
