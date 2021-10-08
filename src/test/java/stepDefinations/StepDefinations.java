@@ -20,14 +20,14 @@ public class StepDefinations extends Base {
 		HomePage hp = new HomePage(driver);
 		hp.getSignInBtn().click();
 	}
-
-	@When("Type possible {string} and {string}")
-	public void type_possible_and(String username, String password) {
+	
+	@When("^Type possible (.+) and (.+)$")
+    public void type_possible_and(String username, String password) throws Throwable {
 		LoginPage lp = new LoginPage(driver);
 		lp.getUsername().sendKeys(username);
 		lp.getPassword().sendKeys(password);
 		lp.getSignInBtn().click();
-	}
+    }
 
     @Then("^If not a registered user, show an error$")
     public void if_not_a_registered_user_show_an_error() throws Throwable {
